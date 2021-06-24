@@ -1,5 +1,96 @@
-svg {
+/*svg's*/
+.bell {
     width: 50px;
     float:left;
+    border-right: 1px solid #bbb;
 }
 
+.bell, .home, .bar-chart, .members, .settings {
+    fill: white;
+}
+
+
+/*navigation bars*/
+header {
+    background-color: rgb(126, 117, 209);
+    color: white;
+}
+
+.nav {
+    background-color: rgb(83, 75, 118);
+}
+
+/*list items*/
+.pfp {
+    border-radius: 50%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+
+/*body*/
+  body {
+      margin: 0px;
+  }
+
+/*media queries for phones*/
+@media (min-width: 320px) {
+
+.pfp {
+    width: 30px;
+    margin: 9px 0px;  
+    padding-right: 2px;
+    padding-left: 8px
+}
+
+.bell {
+    width: 15px;
+    margin: 16px 0px;
+    padding-right: 7px;
+    padding-left: 16px
+}
+
+header {
+    padding: 0px 5px;
+}
+
+.main-nav {
+    padding: 10px 0px;
+}
+
+p {
+    margin: 16px 8px;
+}
+
+.home, .bar-chart, .members, .settings{
+    width: 25px;
+    margin: 16px 0px;
+    padding-right: 7px;
+    padding-left: 7px
+}
+
+.nav {
+    padding: 0px 55px;
+}
+
+
+
+}
+
+/*media queries for tablets*/
+@media (min-width: 768px) {
+
+}
+
+/*media queries for desktops*/
+@media (max-width: 1024px) {
+
+}
