@@ -1,11 +1,19 @@
-/*svg's*/
+/* header main-nav code */
+header {
+    background-color: rgb(126, 117, 209);
+    color: white;
+}
+
 .bell {
     width: 50px;
     float:left;
     border-right: 1px solid #bbb;
+    fill: white;
 }
 
-.bell, .home, .bar-chart, .members, .settings {
+
+/* second nav */
+.home, .bar-chart, .members, .settings {
     fill: white;
 }
 
@@ -15,16 +23,16 @@
     border-radius: 50px;
 }
 
-
-/*navigation bars*/
-header {
-    background-color: rgb(126, 117, 209);
-    color: white;
-}
-
 .nav {
     background-color: rgb(83, 75, 118);
 }
+
+
+
+
+
+
+
 
 /*list items*/
 .pfp {
@@ -71,13 +79,12 @@ ul {
     border-radius: 10px;
 }
 
-.green {
-    background-color:rgb(129, 196, 129);
-    color: white;
-    border-color: transparent;
-    border-radius: 15px;
-    padding: 5px 10px;
+.email-settings, .profile-settings {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 
 .time {
     background-color:white;
@@ -106,6 +113,7 @@ main {
     color: rgb(126, 117, 209);
 }
 
+/* social stats section */
 .social-stat {
     background-color: rgb(218, 218, 218);
     border-radius: 5px;
@@ -114,12 +122,57 @@ main {
     display: flex;
 }
 
+.search, .message, .message-user {
+    border-color: rgb(162, 162, 162);
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+}
+
+.search, .message {
+    margin: 8px 0px 8px 0px;
+    padding: 12px;
+    background-color: rgb(232, 232, 232);
+}
+
+.message {
+    padding-bottom: 80px;
+}
+
+.message-user button {
+    color:white;
+    background-color: rgb(126, 117, 209);
+    padding: 12px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 8px;
+    display:flex;
+    flex-direction: column;
+}
+
+.on {
+    color:white;
+    background-color: rgb(126, 117, 209);
+}
+
 .member img, .activity img {
     border-radius: 50%;
 }
 
 /*media queries for phones*/
 @media (min-width: 320px) {
+
+/* header main-nav code */
+header {
+    padding: 0px 5px;
+}
+
+.main-nav {
+    padding: 10px 0px;
+}
+
+/* second nav */
+
+
 
 .pfp {
     width: 30px;
@@ -133,14 +186,6 @@ main {
     margin: 16px 0px;
     padding-right: 7px;
     padding-left: 16px
-}
-
-header {
-    padding: 0px 5px;
-}
-
-.main-nav {
-    padding: 10px 0px;
 }
 
 p {
@@ -169,7 +214,7 @@ h1{
     padding: 18px;
 }
 
-.new-members, .recent {
+.member, .activity {
     text-align: center;
 }
 
