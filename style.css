@@ -92,22 +92,31 @@ main {
     margin: 15px 15px;
 }
 
-.social-media p {
-    color:rgb(126, 117, 209);
+.platform{
+    color: rgb(126, 117, 209);
+    font-size: 18px;
+}
+
+.num {
+    color: grey;
+    font-size: 30px;
+}
+
+.email {
+    color: rgb(126, 117, 209);
 }
 
 .social-stat {
     background-color: rgb(218, 218, 218);
     border-radius: 5px;
-    padding: 10px;
+    padding: 3px 10px;
     margin: 5px;
-    border-color: black;
+    display: flex;
 }
 
 .member img, .activity img {
     border-radius: 50%;
 }
-
 
 /*media queries for phones*/
 @media (min-width: 320px) {
@@ -157,14 +166,20 @@ h1{
 .facebook, .instagram, .twitter {
     width: 35px;
     margin: 15px 0px;
-    padding: 0px 15px;
+    padding: 18px;
 }
 
 .new-members, .recent {
     text-align: center;
 }
 
+.activity p {
+    font-size: 14px;
+}
 
+.new-members img, .recent img {
+width: 65px;
+}
 
 
 }
