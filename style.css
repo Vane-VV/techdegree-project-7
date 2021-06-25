@@ -47,6 +47,12 @@ ul {
       margin: 0px;
   }
 
+.tm {
+    font-size: 8px;
+    margin:0px ;
+    margin-top: 12px;
+}
+
 .alert {
     background-color:rgb(126, 117, 209);
     color: white;
@@ -128,8 +134,13 @@ header {
     padding: 10px 0px;
 }
 
-p, h1 {
+p {
     margin: 16px 8px;
+    font-size: 15px;
+}
+
+h1{
+    margin: 16px 0px 16px 8px;
     font-size: 15px;
 }
 
