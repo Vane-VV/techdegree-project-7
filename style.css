@@ -9,6 +9,12 @@
     fill: white;
 }
 
+.facebook, .instagram, .twitter {
+    fill: white;
+    background-color: rgb(126, 117, 209);
+    border-radius: 50px;
+}
+
 
 /*navigation bars*/
 header {
@@ -46,10 +52,25 @@ ul {
     color: white;
     border-color: transparent;
     border-radius: 10px;
-    padding: 5px 8px;
+    padding: 0px 4px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.x {
+    background-color:rgb(126, 117, 209);
+    color: white;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.green {
+    background-color:rgb(129, 196, 129);
+    color: white;
+    border-color: transparent;
+    border-radius: 15px;
+    padding: 5px 10px;
 }
 
 .time {
@@ -64,6 +85,23 @@ ul {
 main {
     margin: 15px 15px;
 }
+
+.social-media p {
+    color:rgb(126, 117, 209);
+}
+
+.social-stat {
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    border-color: black;
+}
+
+.member img, .activity img {
+    border-radius: 50%;
+}
+
 
 /*media queries for phones*/
 @media (min-width: 320px) {
@@ -104,6 +142,18 @@ p, h1 {
 .nav ul{
     padding: 0px 30px;
 }
+
+.facebook, .instagram, .twitter {
+    width: 35px;
+    margin: 15px 0px;
+    padding: 0px 15px;
+}
+
+.new-members, .recent {
+    text-align: center;
+}
+
+
 
 
 }
