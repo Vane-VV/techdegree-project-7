@@ -38,7 +38,7 @@ main {
 
 
 /* second nav */
-.home, .bar-chart, .members, .settings {
+#home, #bar-chart, #members, #settings {
     fill: white;
 }
 
@@ -124,6 +124,7 @@ main {
     border-radius: 5px;
     display:flex;
     flex-direction: column;
+    border-color: lightgray;
 }
 
 .search, .message {
@@ -144,25 +145,47 @@ main {
     border-radius: 8px;
     display:flex;
     flex-direction: column;
+    border-color: transparent;
 }
 
 
 /* settings */
+.timezone {
+    color:rgb(121, 121, 121);
+    background-color: rgb(232, 232, 232);
+    border-color: rgb(162, 162, 162);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0px 15px 0px;
+}
 
-.email-settings, .profile-settings {
-    display:flex;
+.save-cancel {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.on {
-    color:white;
-    background-color: rgb(126, 117, 209);
+.save-cancel button {
+    border-radius: 5px;
+    font-size: 13px;
+    border-color: transparent;
 }
 
-.timezone {
-    color:rgb(121, 121, 121);
-    background-color: rgb(232, 232, 232);
+.save {
+    background-color: rgb(126, 117, 209);
+    color: white;
+    width: 50%;
+    padding: 8px 10px;
+    margin: 0px 8px 0px 0px;
+}
+
+.cancel {
+    background-color: rgb(138, 138, 138);
+    color:white;
+    width: 50%;
+    padding: 10px;
+    margin: 0px 0px 0px 8px;
 }
 
 /* toggle switch */
@@ -171,10 +194,35 @@ main {
     justify-content: space-between;
 }
 
+.switch-light, .switch-candy {
+    margin: 40px 0px;
+}
+
+.switch-light strong, .switch-candy strong {
+    width: 156px;
+}
+
 .on-off {
     width: 5em;
-    border-radius: 10px;
 }
+
+.switch-light.switch-candy span, .switch-light.switch-candy span a { 
+    background-color:rgb(126, 117, 209);
+    border-radius: 20px;
+}
+
+.switch-light.switch-candy input ~ span span:first-child, .switch-light.switch-candy input:checked ~ span span:nth-child(2), .switch-candy input:checked + label {
+    color: rgb(126, 117, 209);
+    text-shadow: none;
+}
+
+.switch-light.switch-candy span span, .switch-light.switch-candy input:checked ~ span span:first-child, .switch-toggle.switch-candy label {
+    color: #fff;
+    text-align: center;
+    text-shadow: none;
+    font-size: 13px;
+}
+
 
 /*media queries for phones*/
 @media (min-width: 320px) {
