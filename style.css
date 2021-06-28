@@ -11,6 +11,31 @@ header {
     fill: white;
 }
 
+.pfp {
+    border-radius: 50%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+li {
+    float: left;
+  }
+
+.tm {
+    font-size: 8px;
+    margin:0px ;
+    margin-top: 12px;
+}
+
+main {
+    margin: 15px 15px;
+}
+
 
 /* second nav */
 .home, .bar-chart, .members, .settings {
@@ -28,39 +53,13 @@ header {
 }
 
 
-
-
-
-
-
-
-/*list items*/
-.pfp {
-    border-radius: 50%;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: left;
-  }
-
 /*body*/
   body {
       margin: 0px;
   }
 
-.tm {
-    font-size: 8px;
-    margin:0px ;
-    margin-top: 12px;
-}
 
+/* dashboard */
 .alert {
     background-color:rgb(126, 117, 209);
     color: white;
@@ -79,13 +78,8 @@ ul {
     border-radius: 10px;
 }
 
-.email-settings, .profile-settings {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-
+/* traffic */
 .time {
     background-color:white;
     color: black;
@@ -95,25 +89,7 @@ ul {
 }
 
 
-main {
-    margin: 15px 15px;
-}
-
-.platform{
-    color: rgb(126, 117, 209);
-    font-size: 18px;
-}
-
-.num {
-    color: grey;
-    font-size: 30px;
-}
-
-.email {
-    color: rgb(126, 117, 209);
-}
-
-/* social stats section */
+/* social stats */
 .social-stat {
     background-color: rgb(218, 218, 218);
     border-radius: 5px;
@@ -122,6 +98,27 @@ main {
     display: flex;
 }
 
+.num {
+    color: grey;
+    font-size: 30px;
+}
+
+.platform{
+    color: rgb(126, 117, 209);
+    font-size: 18px;
+}
+
+/* new memmbers and recent activity*/
+.email {
+    color: rgb(126, 117, 209);
+}
+
+.member img, .activity img {
+    border-radius: 50%;
+}
+
+
+/* message user */
 .search, .message, .message-user {
     border-color: rgb(162, 162, 162);
     border-radius: 5px;
@@ -142,11 +139,20 @@ main {
 .message-user button {
     color:white;
     background-color: rgb(126, 117, 209);
-    padding: 12px;
-    margin: 5px 0px 5px 0px;
+    padding: 8px 125px;
+    margin: auto;
     border-radius: 8px;
     display:flex;
     flex-direction: column;
+}
+
+
+/* settings */
+
+.email-settings, .profile-settings {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .on {
@@ -154,8 +160,20 @@ main {
     background-color: rgb(126, 117, 209);
 }
 
-.member img, .activity img {
-    border-radius: 50%;
+.timezone {
+    color:rgb(121, 121, 121);
+    background-color: rgb(232, 232, 232);
+}
+
+/* toggle switch */
+.switch-light {
+    display: flex;
+    justify-content: space-between;
+}
+
+.on-off {
+    width: 5em;
+    border-radius: 10px;
 }
 
 /*media queries for phones*/
@@ -169,10 +187,6 @@ header {
 .main-nav {
     padding: 10px 0px;
 }
-
-/* second nav */
-
-
 
 .pfp {
     width: 30px;
@@ -198,7 +212,9 @@ h1{
     font-size: 15px;
 }
 
-.home, .bar-chart, .members, .settings{
+
+/* second nav */
+#home, #bar-chart, #members, #settings{
     width: 35px;
     margin: 15px 0px;
     padding: 0px 15px;
@@ -208,12 +224,15 @@ h1{
     padding: 0px 30px;
 }
 
+/* social stats */
 .facebook, .instagram, .twitter {
     width: 35px;
     margin: 15px 0px;
     padding: 18px;
 }
 
+
+/* new members and members activity */
 .member, .activity {
     text-align: center;
 }
