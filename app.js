@@ -92,6 +92,11 @@ const dailyTrafficChart = {
         y: {
           beginAtZero: true
         }
+      }, 
+      plugins: {
+          legend: {
+            display: false,
+          }
       }
     },
   };
@@ -99,4 +104,42 @@ const dailyTrafficChart = {
 var myDailyTrafficChart = new Chart(
     document.getElementById('daily-traffic'),
     dailyTrafficChart
+  );
+
+
+//mobile users chart -------------------
+
+const data = {
+    labels: [
+      'Desktopp',
+      'Tablet',
+      'Phones'
+    ],
+    datasets: [{
+      label: 'My First Dataset',
+      data: [300, 50, 100],
+      backgroundColor: [
+        'rgba(126, 117, 209)',
+        'rgba(113, 225, 113)',
+        'rgba(75, 196, 194)'
+      ],
+      hoverOffset: 4
+    }]
+  };
+
+const config = {
+    type: 'doughnut',
+    data: data,
+    options: {
+        plugins: {
+            legend: {
+                position: 'right'
+            }
+        }
+    }
+  };
+
+var myChart = new Chart(
+    document.getElementById('mobile-users'),
+    config
   );
