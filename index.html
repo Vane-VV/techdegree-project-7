@@ -41,21 +41,20 @@
         </div>
         <div class="traffic">
             <h3>TRAFFIC</h3>
-            <button class="time">Hourly</button>
-            <button class="time">Daily</button>
-            <button class="time">Weekly</button>
-            <button class="time">Monthly</button>
+            <div class='traffic-buttons'>
+                <button class="time">Hourly</button>
+                <button class="time">Daily</button>
+                <button class="time">Weekly</button>
+                <button class="time">Monthly</button>
+            </div>
+            <canvas id="traffic"></canvas>
         </div>
-<div class="traffic-chart">
-
-</div>
         <hr>
         <div class='daily-traffic'>
             <h3>DAILY TRAFFIC</h3>
+            <canvas id="daily-traffic"></canvas>
         </div>
-<div class="daily-traffic-chart">
 
-</div>
         <hr>
         <div class='mobile-users'>
             <h3>MOBILE USERS</h3>
@@ -198,5 +197,7 @@
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src='app.js'></script>
 </body>
 </html>

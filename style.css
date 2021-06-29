@@ -93,6 +93,19 @@ main {
     padding: 5px 3px;
 }
 
+.traffic-buttons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.traffic-buttons button:focus {
+    background-color: rgb(113, 225, 113);
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+}
+
 
 /*social stats----------------------------------------------------------------*/
 
@@ -333,9 +346,23 @@ width: 65px;
     margin: 8px;
 }
 
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    padding: 10px 5px
+}
+
+#home, #bar-chart, #members, #settings {
+    padding: 10px;
+    margin: 5px;
+}
+
+
 
 
 }
+
 
 /*media queries for desktops--------------------------------------------------*/
 @media (max-width: 1024px) {
