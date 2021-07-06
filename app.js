@@ -143,3 +143,25 @@ var myChart = new Chart(
     document.getElementById('mobile-users'),
     config
   );
+
+
+// ========================================
+// ========== Message User Widget =========
+// ========================================
+
+// declare send button in a variable
+// add event listener to the button
+  // capture message textarea content in a variable 
+  // capture user input text in a variable
+  // put together the alert text to be used (str)
+  // make the alert pop up
+  // make the text disappear
+  // display an alert showing the message has been sent
+
+const msgField = document.querySelector(('.message-user'));
+
+msgField.addEventListener('click', (e) => {
+  if (e.target.className === "send-msg") {
+    alert('hello there');
+ }
+});
