@@ -1,3 +1,5 @@
+
+
 //charts
 
 
@@ -165,3 +167,11 @@ msgField.addEventListener('click', (e) => {
     alert('hello there');
  }
 });
+
+//close alert
+
+const xButton = document.querySelector('.x');
+xButton.addEventListener('click', () => {
+    const div = document.querySelector('.alert');
+        div.classList.add('removed');
+        setTimeout(() => {div.parentNode.removeChild(div)}, 750);})
