@@ -217,6 +217,7 @@ margin-right: 30px;
     margin: 8px 0px 8px 0px;
     padding: 12px;
     background-color: rgb(232, 232, 232);
+    font-size: 23px;
 }
 
 .message {
@@ -227,9 +228,10 @@ margin-right: 30px;
     color:white;
     background-color: rgb(126, 117, 209);
     padding: 8px 125px;
-    margin: auto;
+    /* margin: auto; */
     border-radius: 8px;
     border-color: transparent;
+    font-size: 23px;
 }
 
 
@@ -242,6 +244,7 @@ margin-right: 30px;
     width: 100%;
     padding: 10px;
     margin: 0px 0px 15px 0px;
+    font-size: 23px;
 }
 
 .save-cancel {
@@ -252,7 +255,7 @@ margin-right: 30px;
 
 .save-cancel button {
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 23px;
     border-color: transparent;
 }
 
@@ -276,6 +279,9 @@ margin-right: 30px;
     margin-right: auto;
 }
 
+.settings strong, .on-off {
+    font-size: 23px;
+}
 
 
 /*toggle switch---------------------------------------------------------------*/
@@ -379,38 +385,39 @@ canvas {
     }
 
     .activity p {
-        font-size: 14px;
+        font-size: 25px;
     }
 
     .new-members img, .recent img {
-    width: 65px;
+    width: 92px;
     }
 }
 
 /*media queries for tablets---------------------------------------------------*/
 @media (min-width: 768px) {
 
+
     .main-nav h1 {
-        padding: 5px;
+        /* padding: 5px; */
         margin-left: 20px;
-        font-size: 23px;
+        font-size: 35px;
     }
 
     .main-nav p {
         padding: 5px 20px 5px 0px;
         margin-left: 0px;
-        font-size: 16px;
+        font-size: 26px;
     }
 
     .bell {
-        width: 23px;
+        width: 30px;
         padding: 5px 20px;
         margin: 8px;
     }
 
     .pfp {
-        width: 40px;
-        padding: 5px;
+        width: 70px;
+        /* padding: 5px; */
         margin: 8px;
     }
 
@@ -423,8 +430,8 @@ canvas {
     }
 
     #home, #bar-chart, #members, #settings {
-        padding: 10px;
-        margin: 5px;
+        padding: 15px;
+        margin: 8px;
     }
 
     .traffic-hours {
@@ -458,8 +465,8 @@ canvas {
         /* justify-content: space-between; */
     }
 
-    h3 {
-        font-size: 15px;
+    .main-content h3 {
+        font-size: 35px;
     }
 
     .member {
@@ -482,20 +489,37 @@ canvas {
     #mobile-users {
         margin: 0px;
         padding: 0px;
-        /* width: 230px; */
+        width: 400px;
     }
 
     #daily-traffic {
         margin: 0px;
         padding: 0px;
-        /* width: 300px; */
+        width: 300px;
     } 
 
     .group-charts hr {
         margin: 8px 15px;
     }
 
-    
+    .group-media {
+        justify-content: space-between;
+    }
+
+    .social-stat {
+        padding: 10px 20px;
+    }
+
+    p, .x {
+        font-size: 30px;
+    }
+
+    .alert {
+        padding: 10px 25px;
+    }
+
+
+
 
 
 
