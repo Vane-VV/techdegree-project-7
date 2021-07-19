@@ -469,8 +469,20 @@ canvas {
         font-size: 35px;
     }
 
-    .member {
+    .member, .activity {
         display: flex;
+        text-align: unset;
+    }
+
+    .nande {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .status {
+        flex-direction: column;
+        justify-content: left;
+        text-align: unset;
     }
 
     .activity {
@@ -517,11 +529,6 @@ canvas {
     .alert {
         padding: 10px 25px;
     }
-
-
-
-
-
 
 
 
