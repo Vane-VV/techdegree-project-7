@@ -133,6 +133,7 @@ const config = {
     type: 'doughnut',
     data: data,
     options: {
+      aspectRatio: 1.9, 
         plugins: {
             legend: {
                 position: 'right'

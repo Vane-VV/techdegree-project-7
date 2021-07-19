@@ -1,4 +1,9 @@
 
+canvas {
+    max-width: 100%;
+  }
+
+
 /* grid layout */
 body {
     display: grid;
@@ -446,8 +451,9 @@ canvas {
     }
 
     .daily-traffic, .mobile-users {
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
+        flex-basis: 50%;
     }
 
     .group-charts {
