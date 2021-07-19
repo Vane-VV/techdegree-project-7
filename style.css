@@ -478,6 +478,7 @@ canvas {
     .member, .activity {
         display: flex;
         text-align: unset;
+        padding: 5px;
     }
 
     .nande {
@@ -535,6 +536,11 @@ canvas {
     .alert {
         padding: 10px 25px;
     }
+
+.date {
+    margin-left: auto;
+}
+
 
 
 
