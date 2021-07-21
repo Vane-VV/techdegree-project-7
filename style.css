@@ -421,7 +421,7 @@ canvas {
     }
 
     .pfp {
-        width: 70px;
+        /* width: 70px; */
         /* padding: 5px; */
         margin: 8px;
     }
@@ -569,6 +569,22 @@ canvas {
 
 
 /*media queries for desktops--------------------------------------------------*/
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
+
+.ppl {
+    display: flex;
+    flex-direction: row;
+}
+
+.msg-set {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
 
 }
