@@ -48,7 +48,8 @@ header p {
 
 .bell-dot span {
     position: absolute;
-    top: 8px; right: 22px; bottom: ; left: ;
+    top: 8px; right: 22px; 
+    /* bottom: ; left: ; */
     height: 8px;
     width: 8px;
     background-color: lightgreen;
@@ -571,15 +572,36 @@ canvas {
 /*media queries for desktops--------------------------------------------------*/
 @media (min-width: 1024px) {
 
-.ppl {
-    display: flex;
-    flex-direction: row;
+.ppl,
+.msg-set {
+  display: flex;
+  flex-direction: row;
 }
 
-.msg-set {
-    display: flex;
-    flex-direction: row;
+.new-members,
+.recent,
+.message-user,
+.settings {
+  flex-basis: 50%;
 }
+
+.ppl p,
+.msg-set p {
+  font-size: 15px;
+}
+
+.activity img, .member img {
+    width: 70px;
+}
+
+
+
+
+
+
+
+
+
 
 
 

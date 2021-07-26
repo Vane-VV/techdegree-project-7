@@ -1,11 +1,4 @@
-
-
 //charts
-
-
-// change data (labels, colors, numbers, etc)
-// change variable names to reflect this particular chart
-// repeat this whole thingy 2 more times for the other charts
 
 const average = [
     '18-22',
@@ -161,13 +154,23 @@ var myChart = new Chart(
   // make the text disappear
   // display an alert showing the message has been sent
 
-const msgField = document.querySelector(('.message-user'));
+const msgField = document.querySelector(('.send-msg'));
 
 msgField.addEventListener('click', (e) => {
-  if (e.target.className === "send-msg") {
-    alert('hello there');
- }
+  const user = document.querySelector('.search');
+    const message = document.querySelector('.message');
+    if (user.value === '') {
+      alert('Message cannot be empty');
+    } else if (message.value === '') {
+      alert('Message cannot be empty');
+    } else {
+      alert(`Your message, "${message.value}", has been sent to ${user.value}. Thank you!`);
+      message.value = '';
+      user.value = '';
+    }
+
 });
+
 
 //close alert
 
