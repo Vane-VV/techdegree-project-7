@@ -106,7 +106,7 @@ var myDailyTrafficChart = new Chart(
 
 const data = {
     labels: [
-      'Desktopp',
+      'Desktop',
       'Tablet',
       'Phones'
     ],
