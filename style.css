@@ -78,7 +78,7 @@ li {
 }
 
 main {
-    margin: 15px 15px;
+    margin: 10px;
 }
 
 
@@ -205,6 +205,10 @@ margin-right: 30px;
     border-radius: 50%;
 }
 
+.hr {
+    border: 0;
+    margin: 0;
+}
 
 /*message user----------------------------------------------------------------*/
 .search, 
@@ -226,7 +230,7 @@ margin-right: 30px;
 }
 
 .message {
-    padding-bottom: 80px;
+    padding-bottom: 107px;
 }
 
 .message-user button {
@@ -302,12 +306,12 @@ margin-right: 30px;
 }
 
 .switch-light.switch-candy span, .switch-light.switch-candy span a { 
-    background-color:rgb(126, 117, 209);
+    /* background-color:rgb(126, 117, 209); */
     border-radius: 20px;
 }
 
 .switch-light.switch-candy input ~ span span:first-child, .switch-light.switch-candy input:checked ~ span span:nth-child(2), .switch-candy input:checked + label {
-    color: rgb(126, 117, 209);
+    /* color: rgb(126, 117, 209); */
     text-shadow: none;
 }
 
@@ -317,6 +321,10 @@ margin-right: 30px;
     text-shadow: none;
     font-size: 13px;
 }
+
+/* .switch-light.switch-candy input ~ span span:first-child, .switch-light.switch-candy input:checked ~ span span:nth-child(2), .switch-candy input:checked + label {
+    background-color: rgb(126, 117, 209);
+} */
 
 canvas {
     padding: 8px;
@@ -401,13 +409,13 @@ canvas {
     .main-nav h1 {
         /* padding: 5px; */
         margin-left: 20px;
-        font-size: 35px;
+        font-size: 28px;
     }
 
     .main-nav p {
         padding: 5px 20px 5px 0px;
         margin-left: 0px;
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .bell {
@@ -417,7 +425,7 @@ canvas {
     }
 
     .pfp {
-        /* width: 70px; */
+        width: 50px;
         /* padding: 5px; */
         margin: 8px;
     }
@@ -431,7 +439,7 @@ canvas {
     }
 
     #home, #bar-chart, #members, #settings {
-        padding: 15px;
+        /* padding: 15px; */
         margin: 8px;
     }
 
@@ -468,7 +476,7 @@ canvas {
     }
 
     .main-content h3 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .member, .activity {
@@ -530,7 +538,7 @@ canvas {
     }
 
     .alert {
-        padding: 10px 25px;
+        padding: 10px 20px;
     }
 
 .date {
@@ -578,12 +586,13 @@ canvas {
 .message-user,
 .settings {
   flex-basis: 50%;
-  padding: 10px;
+  /* padding: 10px; */
+  margin: 5px;
 }
 
 .ppl p,
 .msg-set p {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .activity img, .member img {
@@ -594,9 +603,10 @@ canvas {
     font-size: 10px;
 }
 
-
-
-
+.hr {
+    border-style: inset;
+    border-width: 1px;
+}
 
 
 
