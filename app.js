@@ -20,7 +20,7 @@ const average = [
       fill: true,
       backgroundColor: 'rgba(133, 1, 133, 0.5)',
       borderColor: 'lavender',
-      data: [0, 500, 1000, 1500, 2000, 2500],
+      data: [0, 500, 100, 1500, 2000, 2500, 2000, 300, 1000, 500, 100],
     }]
   };
 
