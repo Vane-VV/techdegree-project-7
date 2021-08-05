@@ -330,6 +330,25 @@ margin-right: 30px;
 /* .switch-light.switch-candy input ~ span span:first-child, .switch-light.switch-candy input:checked ~ span span:nth-child(2), .switch-candy input:checked + label {
     background-color: rgb(126, 117, 209);
 } */
+.switch-toggle.switch-candy,
+.switch-light.switch-candy>span {
+  background-color: rgb(126, 117, 209);
+}
+
+.switch-candy a {
+  background-color: #fff;
+  border: 2px solid rgb(126, 117, 209);
+}
+
+.switch-light.switch-candy input~span span:first-child,
+.switch-light.switch-candy input:checked~span span:nth-child(2),
+.switch-candy input:checked+label {
+  color: #fff;
+}
+
+.on-off {
+  border: 2px solid silver;
+}
 
 canvas {
     padding: 8px;
@@ -617,4 +636,10 @@ canvas {
     border-style: inset;
     border-width: 1px;
 }
+
+.social-stat {
+    padding: 10px 20px;
+    width: 33.33%;
+}
+
 }
