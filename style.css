@@ -21,11 +21,11 @@ header {
 }
 
 header h1 {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 header p {
-    font-size: 13px;
+    font-size: 10px;
     padding: 5px;
 }
 
@@ -34,8 +34,8 @@ header p {
 }
 
 .bell {
-    width: 22px;
-    border-right: 1px solid #bbb;
+    width: 20px;
+    /* border-right: 1px solid #bbb; */
     fill: white;
 }
 
@@ -59,6 +59,10 @@ header p {
 
 .pfp {
     border-radius: 50%;
+}
+
+.hrn {
+    margin: 8px 0px;
 }
 
 ul {
@@ -89,11 +93,11 @@ main {
 }
 
 #home {
-    margin-left: 50px;
+    margin-left: auto;
 }
 
 #settings {
-    margin-right: 50px;
+    margin-right: auto;
 }
 
 .nav {
@@ -112,9 +116,6 @@ main {
 
 
 /*dashboard-------------------------------------------------------------------*/
-.main-content h3 {
-    font-size: 20px;
-}
 
 .alert {
     background-color:rgb(126, 117, 209);
@@ -132,7 +133,7 @@ main {
     color: white;
     border-color: transparent;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /*traffic---------------------------------------------------------------------*/
@@ -142,7 +143,6 @@ main {
     border-color: transparent;
     border-radius: 15px;
     padding: 5px 3px 10px 3px;
-    font-size: 18px;
 }
 
 .traffic-buttons {
@@ -187,7 +187,7 @@ margin-right: 30px;
 
 .num {
     color: grey;
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 10px;
 }
 
@@ -209,6 +209,10 @@ margin-right: 30px;
 .hr {
     border: 0;
     margin: 0;
+}
+
+.greater {
+    color: white;
 }
 
 /*message user----------------------------------------------------------------*/
@@ -358,15 +362,15 @@ canvas {
 
     p {
         margin: 10px 8px;
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .member p, .activity p {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .alert p {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     h1{
@@ -388,9 +392,10 @@ canvas {
 
     /*social stats----------------------------------------------------------------*/
     .facebook, .instagram, .twitter {
-        width: 35px;
-        margin: 15px 10px;
-        padding: 0px 20px;
+        width: 25px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 0px 10px;
     }
 
 
@@ -408,6 +413,7 @@ canvas {
 
     .greater {
         margin-left: auto;
+        color: gray;
     }
 
     .main-nav h1 {
@@ -477,10 +483,6 @@ canvas {
         display: flex;
         flex-direction: row;
         /* justify-content: space-between; */
-    }
-
-    .main-content h3 {
-        font-size: 25px;
     }
 
     .member, .activity {
@@ -578,6 +580,10 @@ canvas {
 
 /*media queries for desktops--------------------------------------------------*/
 @media (min-width: 1024px) {
+
+ .greater {
+    color: gray;
+}
 
 .ppl,
 .msg-set {

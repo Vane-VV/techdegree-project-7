@@ -160,7 +160,7 @@ msgField.addEventListener('click', (e) => {
   const user = document.querySelector('.search');
     const message = document.querySelector('.message');
     if (user.value === '') {
-      alert('Message cannot be empty');
+      alert('User cannot be empty');
     } else if (message.value === '') {
       alert('Message cannot be empty');
     } else {
